@@ -1,3 +1,4 @@
+/*
 $(function() {
     $('a.scroll[href*="#"]').on('click', function(e) {
         e.preventDefault();
@@ -6,6 +7,7 @@ $(function() {
         }, 500, 'linear');
     });
 });
+*/
 
 $(document).ready(function () {
     var navbar = $('.navbar');
@@ -26,7 +28,7 @@ $(document).ready(function () {
     */
     $(window).scroll(function() {
         if ($(this).scrollTop() >= navHeight) {
-            navbar.addClass('navbar-color'), function() {};
+            navbar.addClass('navbar-color');
         } else {
             navbar.removeClass('navbar-color');
         }
@@ -42,9 +44,6 @@ $(document).ready(function () {
     $('footer').load('common.html footer');
     */
     //$('#alertbox .alertcontent').load('common.html .alertcontent');
-});
-
-$(document).ready(function() {
     totopfade();
     function totopfade(){
         if ($(this).scrollTop() > 100) {
