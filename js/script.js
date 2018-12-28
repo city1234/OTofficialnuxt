@@ -10,6 +10,7 @@ $(document).ready(function () {
     });
     var agent = navigator.userAgent.toLowerCase();
     if (agent.match("android") || agent.match("iphone") || agent.match("ipad")) { } else {
+        $('html, body').addClass('lockoverflow');
         nice = $("html").niceScroll({ scrollspeed: 51, mousescrollstep: 45, cursorwidth: "5px", cursorcolor: "#222", cursorborder: "0px solid #fff" });
     };
     totopfade();
