@@ -401,7 +401,7 @@ var vm = new Vue({
                 downloadlink: "images/activebanner/mainbanner_01.jpg",
                 mainbannerimg: "",
                 bannerimg: "",
-                name: "已更新",
+                name: "即将发布",
                 time: "2018/8/22",
                 containtexts: '1.2.6版本功能说明',
                 containtext: '\
