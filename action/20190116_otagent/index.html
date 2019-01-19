@@ -10,11 +10,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>OT官网会员端</title>
+    <title>OT官网代理端</title>
     <link rel="stylesheet" href="stylesheets/screen.css" />
-    <link rel="stylesheet" href="/stylesheets/animate.css">
-    <script src="/js/jquery-1.12.3.min.js"></script>
-    <script src="/js/wow.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/animate.css">
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/vue-carousel-3d.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/myjs.js"></script>
 </head>
 
@@ -23,97 +26,106 @@
     <section class="wrapper topbanner">
         <div class="wrapper_in">
             <div class="rowbox">
-                <div class="phone_img wow fadeInLeft pc_show">
+                <div class="phone_img wow fadeInLeft">
                     <img src="images/iphone.png" alt="">
                 </div>
                 <div class="content">
+                    <div class="topbannertitle">
+                        <div class="wow fadeInRight"><span class="mark">手机端</span>代理后台</div>
+                        <div class="title_secline wow fadeInRight" data-wow-delay="0.1s">移动办公<span>更高效</span></div>
+                    </div>
+                    <div class="stitle wow fadeInRight" data-wow-delay="0.2s">
+                        全新设计的产品界面，更加清爽，简洁<br/>
+                        为您提供更好的使用体验
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper convenient">
+        <div class="wrapper_in">
+            <div class="title_out">
+                <div class="title wow fadeInUp"><span>H5运行</span>方便快捷</div>
+                <div class="stitle wow fadeInUp" data-wow-delay="0.1s">无需安装下载，兼容PC端与移动端</div>
+            </div>
+            <div class="convenient_img wow fadeInUp mb_show"><img src="images/bg_m_02.png" alt=""></div>
+            <div id="carousel3d" class="runbanner pc_show">
+                <div class="iphonebox">
+                    <img src="images/iphoneborder.png" alt="">
+                </div>
+                <div class="iphonebox iphoneboxbg">
+                    <img src="images/iphoneborderbg.png" alt="">
+                </div>
+                <carousel-3d :width="290" :height="630" :perspective="0" :space="320" :display="5" :controls-visible="false" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="2000" :autoplayHoverPause="true">
+                    <slide :index="2" class="">
+                        <div><img src="images/iphonebanner_01.png" alt=""></div>
+                    </slide>
+                    <slide :index="1" class="">
+                        <div><img src="images/iphonebanner_02.png" alt=""></div>
+                    </slide>
+                    <slide :index="0" class="">
+                        <div><img src="images/iphonebanner_03.png" alt=""></div>
+                    </slide>
+                    <slide :index="4" class="">
+                        <div><img src="images/iphonebanner_04.png" alt=""></div>
+                    </slide>
+                    <slide :index="3" class="">
+                        <div><img src="images/iphonebanner_05.png" alt=""></div>
+                    </slide>
+                </carousel-3d>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper webhigher">
+        <div class="wrapper_in">
+            <div class="rowbox">
+                <div class="content">
                     <div class="title_out">
-                        <div class="title wow fadeInUp">
-                            <div class="titlelight"><img src="images/title_an.png" alt=""></div>
-                            <div>给您带来极致感受</div>
+                        <div class="title">
+                            <div class="wow fadeInLeft">运用前沿技术</div>
+                            <div class="wow fadeInLeft" data-wow-delay="0.1s">性能更<span>高 效</span></div>
                         </div>
+                        <div class="stitle wow fadeInLeft" data-wow-delay="0.2s">已经成为Web应用的开发潮流，尤其适用于移动设备</div>
                     </div>
-                    <ul class="list">
-                        <li class="bulelist wow fadeInRight">热更新加载</li>
-                        <li class="greenlist wow fadeInRight" data-wow-delay="0.1s">游戏稳定流畅</li>
-                        <li class="orglist wow fadeInRight" data-wow-delay="0.2s">汇聚多个视讯平台</li>
-                        <li class="purplelist wow fadeInRight" data-wow-delay="0.3s">主流的手机端设计元素</li>
-                    </ul>
+                </div>
+                <div class="webhigherpic wow fadeInRight">
+                    <img src="images/higherweb_pic.png" alt=""></li>
                 </div>
             </div>
         </div>
     </section>
-    <section class="wrapper newgame">
-        <div class="wrapper_in">
-            <div class="title_out wow fadeInUp">
-                <div class="title" data-text="全新游戏中心">全新游戏中心</div>
-                <div class="stitle">人性化交互体验，全新设计的产品界面，更加清爽、简洁。给您愉悦心情</div>
-            </div>
-            <ul class="rowbox">
-                <li class=" wow fadeInUp" >
-                    <div class="icon icon_01_hover"><img src="images/icon_01.png" alt=""></div>
-                    <div class="txt">支持后台配置</div>
-                </li>
-                <li class=" wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="icon icon_02_hover" ><img src="images/icon_02.png" alt=""></div>
-                    <div class="txt">满足您不同的运营需求</div>
-                </li>
-                <li class=" wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="icon icon_03_hover" ><img src="images/icon_03.png" alt=""></div>
-                    <div class="txt">未来持续优化游戏中心</div>
-                </li>
-                <li class=" wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="icon icon_04_hover"><img src="images/icon_04.png" alt=""></div>
-                    <div class="txt">路单走势图即将来袭</div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="wrapper skin">
-        <div class="wrapper_in">
-            <div class="skinline wow fadeInLeft pc_show"><img src="images/skin_line.png" alt=""></div>
-            <div class="rowbox">
-                <div class="skinpic">
-                    <li class="skinpic_03 wow bounceInLeft"><img src="images/skin_03.png" alt=""></li>
-                    <li class="skinpic_02 wow bounceInLeft" data-wow-delay="0.1s"><img src="images/skin_02.png" alt=""></li>
-                    <li class="skinpic_01 wow bounceInLeft" data-wow-delay="0.2s"><img src="images/skin_01.png" alt=""></li>
-                </div>
-                <div class="content">
-                    <div class="title wow fadeInUp">
-                        自定义皮肤
-                    </div>
-                    <ul class="list wow fadeInRight">
-                        <li class="wow bounceInRight">主流的UI设计</li>
-                        <li class="wow bounceInRight" data-wow-delay="0.1s">多套界面肤色</li>
-                        <li class="wow bounceInRight" data-wow-delay="0.2s">支持换肤功能</li>
-                        <li class="wow bounceInRight" data-wow-delay="0.3s">与您的PC端更加切合</li>
-                        <li class="wow bounceInRight" data-wow-delay="0.4s">满足不同用户的审美爱好</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="wrapper safe">
+    <section class="wrapper tableanalysis">
         <div class="wrapper_in">
             <div class="rowbox">
-                <div class="content">
-                    <div class="title wow fadeInUp" data-text="安全升级">
-                        安全升级
-                    </div>
-                    <ul class="list wow fadeInLeft">
-                        <li class="wow bounceInLeft">最新的支付技术</li>
-                        <li class="wow bounceInLeft" data-wow-delay="0.1s">让支付更快，更稳，更安全！</li>
-                    </ul>
+                <div class="tablepic wow fadeInLeft">
+                    <div class="iphone_table_content"><img src="images/iphone_table_01.png" alt=""></div> 
+                    <div class="iphone_table_content"><img src="images/iphone_table_02.png" alt=""></div> 
+                    <div class="iphone_table_content"><img src="images/iphone_table_03.png" alt=""></div> 
+                    <div class="iphone_table_content"><img src="images/iphone_table_04.png" alt=""></div> 
+                    <div class="iphone_table_bottom"><img src="images/iphone_table.png" alt=""></div> 
                 </div>
-                <div class="safepic wow fadeInUp">
-                    <div class="txtpic txtpic_01 wow zoomInUp" data-wow-delay="0.4s"><img src="images/safe_icon_01.png" alt=""></div>
-                    <div class="txtpic txtpic_02 wow zoomInUp" data-wow-delay="0.3s"><img src="images/safe_icon_02.png" alt=""></div>
-                    <div class="txtpic txtpic_03 wow zoomInRight" data-wow-delay="0.2s"><img src="images/safe_icon_03.png" alt=""></div>
-                    <div class="safephone"><img src="images/safe_pic.png" alt=""></div>
+                <div class="content">
+                    <div class="title_out">
+                        <div class="title wow fadeInRight">
+                            <span>可视化</span>报表分析
+                        </div>
+                        <div class="stitle wow fadeInRight" data-wow-delay="0.1s">帮助用户进行数据分析<span class="pc_show">，</span><span class="mb_show"><br/></span>提高工作效率</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 </body>
-
+<script>
+    new Vue({
+        el: '#carousel3d',
+        data: {
+            slides: 7
+        },
+        components: {
+            'carousel-3d': Carousel3d.Carousel3d,
+            'slide': Carousel3d.Slide
+        }
+    })
+</script>
 </html>

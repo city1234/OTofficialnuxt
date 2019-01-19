@@ -233,7 +233,7 @@ input{
     line-height: 40px;
     @include range-width-in(0,767px){
         padding: 0 5%;
-        padding-bottom: 20%;
+        padding-bottom: 10%;
     }
 }
 body{
@@ -251,8 +251,8 @@ body{
     letter-spacing: 1vmin;
     font-weight: 900;
     @include range-width-in(0,767px){
-        font-size: 40px;
-        font-size: 10vmin;
+        font-size: 24px;
+        font-size: 6.5vmin;
         line-height: 50px;
         line-height: 12vmin;
         letter-spacing: 3px;
@@ -267,8 +267,8 @@ body{
     letter-spacing: 5px;
     letter-spacing: 0.5vmin;
     @include range-width-in(0,767px){
-        font-size: 25px;
-        font-size: 5vmin;
+        font-size: 14px;
+        font-size: 3.8vmin;
         line-height: 30px;
         line-height: 8vmin;
         letter-spacing: 1px;
@@ -375,7 +375,7 @@ a.scroll{
         background-size: contain;
     }
     @include range-width-in(0,767px){
-        min-height: 100vh;
+        min-height: 280px;
         //background-attachment:fixed;
     }
     .rowbox{
@@ -395,13 +395,13 @@ a.scroll{
             letter-spacing: 15px;
             letter-spacing: 1.5vmin;
             @include range-width-in(0,767px){
-                margin-top: 15%;
-                font-size: 30px;
-                font-size: 7vmin;
+                margin-top: 8%;
+                font-size: 18px;
+                font-size: 5vmin;
                 line-height: 38px;
                 line-height: 9vmin;
                 letter-spacing: 6px;
-                letter-spacing: 1vmin;
+                letter-spacing: 1.5vmin;
             }
             .titlelight{
                 position: relative;
@@ -410,6 +410,7 @@ a.scroll{
                     margin-top: 0px;
                     margin-bottom: -15px;
                 }
+                /*
                 &:after{
                     position: absolute;
                     top:0;
@@ -432,13 +433,20 @@ a.scroll{
                         }
                     }
                 }
+                */
             }
             img{
                 width: 100%;
+                @include range-width-in(0,767px){
+                    width: 75%;
+                }
             }
         }
         .list{
             margin-top: 3%;
+            @include range-width-in(0,767px){
+                margin-top: 1%;
+            }
             li{
                 position: relative;
                 text-align: left;
@@ -455,6 +463,9 @@ a.scroll{
                     height: 30px;
                     @include css3(border-radius,50%);
                     background: linear-gradient( 90deg, transparent, rgba(0,0,0,.4));
+                    @include range-width-in(0,767px){
+                        width: 10px;height: 10px;
+                    }
                     /*
                     background: -moz-linear-gradient(90deg, #fff, #333);  
                     background: -webkit-gradient(linear, left 0, right 0, from(#fff), to(#333));  
@@ -471,10 +482,11 @@ a.scroll{
                     @include css3(border-radius,50%);
                 }
                 @include range-width-in(0,767px){
-                    margin-left: 5%;
-                    font-size: 22px;
-                    padding: 10px 0 10px 50px;
-                    &:after,&:before{top: 17px;}
+                    margin-left: 15%;
+                    font-size: 15px;
+                    line-height: 20px;
+                    padding: 3px 0 3px 50px;
+                    &:after,&:before{top: 8px;left: 30px;width: 10px;height: 10px;}
                 }
             }
             .bulelist{&:before{background:#64c7ec;}&:after{background: linear-gradient( 90deg, transparent, #4a92cd );}}
@@ -501,6 +513,9 @@ a.scroll{
         .stitle{
             margin-top:30px; 
             color:#999999;
+            @include range-width-in(0,767px){
+                margin-top:-8px; 
+            }
         }
     }
     .rowbox{
@@ -508,6 +523,10 @@ a.scroll{
         -ms-flex-pack: center;
         justify-content: center;
         margin: 8% auto;
+        @include range-width-in(0,767px){
+            margin-top: 2%;
+            margin-bottom: 0;
+        }
         li{
             width: 25%;
             cursor: pointer;
@@ -541,11 +560,20 @@ a.scroll{
             .icon_03_hover{&:after{background-image: url(../images/icon_03_hover.png)}}
             .icon_04_hover{&:after{background-image: url(../images/icon_04_hover.png)}}
             img{
-                max-width: 100%;
+                width: 100%;
                 margin-bottom: 10px;
+                vertical-align: middle;
+                @include range-width-in(0,767px){
+                    width: 65%;
+                }
             }
             .txt{
                 color:#333;
+                @include range-width-in(0,767px){
+                    margin-top: -14px;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
             }
         }
         @include range-width-in(0,767px){
@@ -554,7 +582,10 @@ a.scroll{
             flex-wrap: wrap;
             li{
                 width: 46%;
-                margin: 5% 2%;
+                margin: 2% 2%;
+                .icon{
+                    &:hover{&:after{opacity: 0!important;}}
+                }
             }
         }
     }
@@ -564,10 +595,15 @@ a.scroll{
     background-size: cover;
     min-height: 1080px;
     color:#fff;
+    @include range-width-in(0,767px){
+        min-height: 490px;
+        background: url(../images/skinbg_mb.png)top center no-repeat;
+        background-size: cover;
+    }
     .wrapper_in{
         @include range-width-in(0,767px){
-        padding: 0;
-        padding-bottom: 15%;
+        padding-top: 10%;
+        padding-bottom: 0;
         }
     }
     @include range-width-in(1600px){
@@ -579,19 +615,52 @@ a.scroll{
     .title{
         color:#fff;
         text-align: right;
+        @include range-width-in(0,767px){
+            text-align: center;
+        }
     }
     .list{
         text-align: right;
-        padding: 0 30px;
+        padding:0 30px;
         font-size: 24px;
         margin-top: 10%;
         border-right: #fff solid 10px;
         @include range-width-in(0,767px){
+            padding-left: 20px;
             font-size: 18px;
+            text-align: left;
+            border-right: none;
+            margin-top: 0;
         }
         li{
             padding: 15px 0;
             white-space:nowrap;
+            @include range-width-in(0,767px){
+                padding: 0;
+                padding-left: 30px;
+                line-height: 35px;
+                position: relative;
+                &:after{
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    top:calc(50% - 3px);
+                    left: 2px;
+                    @include css3(transform,rotate(45deg));
+                    background: #fff;
+                }
+                &:before{
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    border: #fff solid 1px;
+                    position: absolute;
+                    top:calc(50% - 5px);
+                    left: 0px;
+                    @include css3(transform,rotate(45deg));
+                }
+            }
         }
     }
     .rowbox{
@@ -606,9 +675,16 @@ a.scroll{
                 position: absolute;
                 img{max-width: 100%;}
             }
-            .skinpic_01{top:0;left: 20%;}
-            .skinpic_02{top:0;left: -15%;position: relative;}
+            .skinpicin{
+                opacity: 0;
+                @include css3(transition,all .3s ease);
+            }
+            .skinpic_01{top: -200px;left: -18%;}
+            .skinpic_02{top: -100px;left: -35%;position: relative;}
             .skinpic_03{top:0;left: -20%;}
+            .skinpic_01.active{top:0;left: 20%;opacity: 1;}
+            .skinpic_02.active{top:0;left: -15%;position: relative;opacity: 1;}
+            .skinpic_03.active{top:0;left: -20%;opacity: 1;}
             @include range-width-in(0,1080px){
                 .skinpic_02{left: 0;}
                 .skinpic_01{left: 25%;}
@@ -617,22 +693,21 @@ a.scroll{
         @include range-width-in(0,767px){
             -webkit-flex-direction: column;
             -ms-flex-direction: column;
-            flex-direction: column;
+            flex-direction: column-reverse;
             width: 100%;
             .content{
                 margin-right: 0;
             }
             .skinpic{
-                //height: 550px;
-                width: 80%;
-                margin-top: -200px;
-                margin-left: -15%;
+                margin-left: 0;
+                width: 100%;
+                img{width: 100%;}
             }
         }
     }
     .skinline{
         position: absolute;
-        bottom: 10%;
+        bottom: 15%;
         left: -25%;
         img{
             max-width: 100%;
@@ -640,12 +715,15 @@ a.scroll{
     }
 }
 .safe{
-    //min-height: 50vh;
+    min-height: 100vh;
     //margin-bottom: 10%;
+    @include range-width-in(0,767px){
+        min-height: auto;
+    }
     .wrapper_in{
         @include range-width-in(0,767px){
         padding: 0;
-        padding-bottom: 15%;
+        padding-bottom: 5%;
         }
     }
     .title{
@@ -653,6 +731,9 @@ a.scroll{
         text-align: left;
         position: relative;
         color: #fda931;
+        @include range-width-in(0,767px){
+            text-align: center;
+        }
         &:before{
             content: attr(data-text);
             position: absolute;
@@ -671,11 +752,41 @@ a.scroll{
         margin-top: 10%;
         border-left: #fda931 solid 10px;
         @include range-width-in(0,767px){
+            padding-left: 20px;
             font-size: 18px;
+            text-align: left;
+            border-left: none;
+            margin-top: 0;
         }
         li{
             padding: 15px 0;
             white-space:nowrap;
+            @include range-width-in(0,767px){
+                padding: 0;
+                padding-left: 30px;
+                line-height: 35px;
+                position: relative;
+                &:after{
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    top:calc(50% - 3px);
+                    left: 2px;
+                    @include css3(transform,rotate(45deg));
+                    background: #000;
+                }
+                &:before{
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    border: #000 solid 1px;
+                    position: absolute;
+                    top:calc(50% - 5px);
+                    left: 0px;
+                    @include css3(transform,rotate(45deg));
+                }
+            }
         }
     }
     .rowbox{
@@ -684,20 +795,46 @@ a.scroll{
         justify-content: space-between;
         .safepic{
             position: relative;
-            //width: 50%;
-            img{max-width: 100%;}
+            .safephone{
+                z-index: 1;
+                position: relative;
+                img{
+                    width: 100%;
+                    z-index: 1;
+                    @include range-width-in(0,767px){
+                        width: 80%;
+                        
+                    }
+                }
+            }
             .txtpic{
                 position: absolute;
                 max-width: 25%;
+                top:20%;
+                left: 30%;
+                opacity: 0;
+                @include css3(transition,all .3s ease);
+                @include css3(transform,rotate(45deg));
+                img{
+                    width: 100%;
+                }
             }
-            .txtpic_01{top: 20%; right: 0;}
-            .txtpic_02{top: -8%; left: 50%;}
-            .txtpic_03{top: 8%; left: 0%;}
+            .txtpic_01.active{top: 20%; left:75%; opacity: 1;@include css3(transform,rotate(0deg));}
+            .txtpic_02.active{top: -8%; left: 50%;opacity: 1;@include css3(transform,rotate(0deg));}
+            .txtpic_03.active{top: 8%; left: 0%;opacity: 1;@include css3(transform,rotate(0deg));}
+            @include range-width-in(0,767px){
+                width: 80%;
+                margin-top: 5%;
+                .txtpic{max-width: 25%;z-index: 10;}
+                .txtpic_01{top: 20%; left:75%;opacity: 1;@include css3(transform,rotate(0deg));}
+                .txtpic_02{top: -8%; left: 50%;opacity: 1;@include css3(transform,rotate(0deg));}
+                .txtpic_03{top: 8%; left: 0%;opacity: 1;@include css3(transform,rotate(0deg));}
+            }
         }
         @include range-width-in(0,767px){
             -webkit-flex-direction: column;
             -ms-flex-direction: column;
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
     }
 }

@@ -21,4 +21,12 @@ $(document).ready(function() {
             }, 500, 'linear');
         });
     });
+    $(".tableanalysis").waypoint(
+        function(direction) {
+            if (direction == 'down') {
+                $(".iphone_table_content").addClass("active");
+            } else if (direction == 'up') {
+                $(".iphone_table_content").removeClass("active");
+            }
+        }, {offset: '20%'});
 });

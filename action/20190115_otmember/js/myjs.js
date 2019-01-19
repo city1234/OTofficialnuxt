@@ -21,4 +21,20 @@ $(document).ready(function() {
             }, 500, 'linear');
         });
     });
+    $(".safe").waypoint(
+    function(direction) {
+        if (direction == 'down') {
+            $(".txtpic").addClass("active");
+        } else if (direction == 'up') {
+            $(".txtpic").removeClass("active");
+        }
+    }, {offset: '30%'});
+    $(".skin").waypoint(
+        function(direction) {
+            if (direction == 'down') {
+                $(".skinpicin").addClass("active");
+            } else if (direction == 'up') {
+                $(".skinpicin").removeClass("active");
+            }
+        }, {offset: '30%'});
 });
