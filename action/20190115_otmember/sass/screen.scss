@@ -276,8 +276,8 @@ body{
     }
 }
 .txt{
-    font-size: 18px;
-    font-size: 2vmin;
+    font-size: 24px;
+    font-size: 2.4vmin;
     line-height: 25px;
     line-height: 2.5vmin;
     @include range-width-in(0,767px){
