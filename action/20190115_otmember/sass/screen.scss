@@ -371,8 +371,14 @@ a.scroll{
 .topbanner{
     background: url(../images/bg.jpg)top center no-repeat;
     background-size: cover;
-    @include range-width-in(1600px){
-        background-size: contain;
+    min-height: 830px;
+    @include range-width-in(1980px){
+        .wrapper_in{
+            padding-bottom: 5%;
+        }
+    }
+    @include range-width-in(1980px){
+        min-height: 100vh;
     }
     @include range-width-in(0,767px){
         min-height: 280px;
@@ -597,8 +603,11 @@ a.scroll{
 .skin{
     background: url(../images/bg2.jpg)top center no-repeat;
     background-size: cover;
-    min-height: 1080px;
+    min-height: 1130px;
     color:#fff;
+    @include range-width-in(1980px){
+        min-height: 100vh;
+    }
     @include range-width-in(0,767px){
         min-height: 490px;
         background: url(../images/skinbg_mb.png)top center no-repeat;
@@ -609,9 +618,6 @@ a.scroll{
         padding-top: 10%;
         padding-bottom: 0;
         }
-    }
-    @include range-width-in(1600px){
-        background-size: contain;
     }
     .content{
         margin-right: 3%;

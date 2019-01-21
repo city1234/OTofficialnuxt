@@ -404,6 +404,7 @@ a.scroll span.arrow {
 .topbanner {
   background: url(../images/bg.png) top center no-repeat;
   background-size: cover;
+  min-height: 1080px;
 }
 /* line 374, ../sass/screen.scss */
 .topbanner .rowbox {
