@@ -408,13 +408,11 @@ a.scroll span.arrow {
   background-size: cover;
   min-height: 830px;
 }
-@media screen and (min-width: 1980px) {
-  /* line 376, ../sass/screen.scss */
-  .topbanner .wrapper_in {
-    padding-bottom: 5%;
-  }
+/* line 375, ../sass/screen.scss */
+.topbanner .wrapper_in {
+  padding-bottom: 0;
 }
-@media screen and (min-width: 1980px) {
+@media screen and (min-width: 1920px) {
   /* line 371, ../sass/screen.scss */
   .topbanner {
     min-height: 100vh;
@@ -424,6 +422,10 @@ a.scroll span.arrow {
   /* line 371, ../sass/screen.scss */
   .topbanner {
     min-height: 280px;
+  }
+  /* line 383, ../sass/screen.scss */
+  .topbanner .wrapper_in {
+    padding-bottom: 10%;
   }
 }
 /* line 387, ../sass/screen.scss */

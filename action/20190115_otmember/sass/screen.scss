@@ -372,17 +372,17 @@ a.scroll{
     background: url(../images/bg.jpg)top center no-repeat;
     background-size: cover;
     min-height: 830px;
-    @include range-width-in(1980px){
-        .wrapper_in{
-            padding-bottom: 5%;
-        }
+    .wrapper_in{
+        padding-bottom: 0;
     }
-    @include range-width-in(1980px){
+    @include range-width-in(1920px){
         min-height: 100vh;
     }
     @include range-width-in(0,767px){
         min-height: 280px;
-        //background-attachment:fixed;
+        .wrapper_in{
+            padding-bottom: 10%;
+        }
     }
     .rowbox{
         -webkit-justify-content: space-between;
