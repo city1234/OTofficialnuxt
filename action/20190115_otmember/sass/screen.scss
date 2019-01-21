@@ -508,6 +508,10 @@ a.scroll{
                 z-index: 10;
                 color:#ff6841;
                 -webkit-mask:linear-gradient(to left, red, transparent );
+                top: 0;
+                left: 0;
+                text-align: center;
+                width: 100%;
             }
         }
         .stitle{
