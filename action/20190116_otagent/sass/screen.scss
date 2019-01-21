@@ -246,44 +246,44 @@ body{
 }
 .title{
     font-size: 48px;
-    font-size: 5vmin;
+    //font-size: 5vmin;
     line-height: 80px;
-    line-height: 8vmin;
+    //line-height: 8vmin;
     text-align: center;
     //font-weight: 900;
     @include range-width-in(0,767px){
         font-size: 18px;
-        font-size: 5vmin;
+        //font-size: 5vmin;
         line-height: 35px;
-        line-height: 8vmin;
+        //line-height: 8vmin;
         letter-spacing: 3px;
-        letter-spacing: 0.5vmin;
+        //letter-spacing: 0.5vmin;
     }
 }
 .stitle{
     font-size: 20px;
-    font-size: 2.2vmin;
+    //font-size: 2.2vmin;
     line-height: 35px;
-    line-height: 3.5vmin;
+    //line-height: 3.5vmin;
     @include range-width-in(0,767px){
         font-size: 14px;
-        font-size: 3.5vmin;
+        //font-size: 3.5vmin;
         line-height: 18px;
-        line-height: 5vmin;
+        //line-height: 5vmin;
         letter-spacing: 1px;
         letter-spacing: 0.2vmin;
     }
 }
 .txt{
     font-size: 18px;
-    font-size: 2vmin;
+    //font-size: 2vmin;
     line-height: 25px;
-    line-height: 2.5vmin;
+    //line-height: 2.5vmin;
     @include range-width-in(0,767px){
         font-size: 18px;
-        font-size: 4vmin;
+        //font-size: 4vmin;
         line-height: 25px;
-        line-height: 6.5vmin;
+        //line-height: 6.5vmin;
     }
 }
 .rowbox{
@@ -382,15 +382,22 @@ a.scroll{
         justify-content: space-between;
     }
     .phone_img{
-        margin-top: 7%;
+        margin-top: -10%;
+        img{
+            width: 90%;
+        }
         @include range-width-in(0,1080px){
             flex-shrink: 2;
             width: 35%;
             margin-left: -3%;
         }
-        img{
-            width: 100%;
+        @include range-width-in(0,767px){
+            margin-top: 7%;
+            img{
+                width: 100%;
+            }
         }
+        
     }
     .content{
         flex-grow: 1;
@@ -403,9 +410,9 @@ a.scroll{
         .topbannertitle{
             color:#3a6697;
             font-size: 80px;
-            font-size: 8vmin;
+            //font-size: 8vmin;
             line-height: 120px;
-            line-height: 12vmin;
+            //line-height: 12vmin;
             white-space:nowrap;
             @include range-width-in(0,767px){
                 font-size: 24px;
@@ -416,7 +423,7 @@ a.scroll{
             }
             .title_secline{
                 font-size: 78px;
-                font-size: 8vmin;
+                //font-size: 8vmin;
                 @include range-width-in(0,767px){
                     font-size: 24px;
                 }
@@ -565,14 +572,14 @@ a.scroll{
         }
         @include range-width-in(0,767px){
             .webhigherpic{
-                width: 40%;
+                width: 45%;
                 margin-top: 30%;
                 margin-left: -15%;
                 img{
                     width: 180%;
                 }
             }
-            .content{width: 60%;}
+            .content{width: 55%;}
         }
     }
 }

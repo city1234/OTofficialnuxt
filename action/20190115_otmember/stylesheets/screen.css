@@ -184,61 +184,45 @@ body {
 /* line 244, ../sass/screen.scss */
 .title {
   font-size: 48px;
-  font-size: 5vmin;
   line-height: 60px;
-  line-height: 6vmin;
   text-align: center;
   letter-spacing: 10px;
-  letter-spacing: 1vmin;
   font-weight: 900;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
   /* line 244, ../sass/screen.scss */
   .title {
     font-size: 24px;
-    font-size: 6.5vmin;
     line-height: 50px;
-    line-height: 12vmin;
     letter-spacing: 3px;
-    letter-spacing: 0.5vmin;
   }
 }
 
 /* line 262, ../sass/screen.scss */
 .stitle {
   font-size: 20px;
-  font-size: 2vmin;
   line-height: 25px;
-  line-height: 2.5vmin;
   letter-spacing: 5px;
-  letter-spacing: 0.5vmin;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
   /* line 262, ../sass/screen.scss */
   .stitle {
     font-size: 14px;
-    font-size: 3.8vmin;
     line-height: 30px;
-    line-height: 8vmin;
     letter-spacing: 1px;
-    letter-spacing: 0.2vmin;
   }
 }
 
 /* line 278, ../sass/screen.scss */
 .txt {
   font-size: 24px;
-  font-size: 2.4vmin;
   line-height: 25px;
-  line-height: 2.5vmin;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
   /* line 278, ../sass/screen.scss */
   .txt {
     font-size: 18px;
-    font-size: 4vmin;
     line-height: 25px;
-    line-height: 6.5vmin;
   }
 }
 
@@ -446,18 +430,14 @@ a.scroll span.arrow {
 .topbanner .content .title {
   color: #fff;
   letter-spacing: 15px;
-  letter-spacing: 1.5vmin;
 }
 @media screen and (min-width: 0) and (max-width: 767px) {
   /* line 399, ../sass/screen.scss */
   .topbanner .content .title {
     margin-top: 8%;
     font-size: 18px;
-    font-size: 5vmin;
     line-height: 38px;
-    line-height: 9vmin;
     letter-spacing: 6px;
-    letter-spacing: 1.5vmin;
   }
 }
 /* line 412, ../sass/screen.scss */
