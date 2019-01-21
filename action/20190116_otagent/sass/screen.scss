@@ -371,6 +371,9 @@ a.scroll{
     background: url(../images/bg.png)top center no-repeat;
     background-size: cover;
     min-height: 1080px;
+    @include range-width-in(0,767px){
+        min-height:auto;
+    }
     .rowbox{
         -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
@@ -378,9 +381,9 @@ a.scroll{
     }
     .phone_img{
         margin-top: 7%;
-        @include range-width-in(0,767px){
+        @include range-width-in(0,1080px){
             flex-shrink: 2;
-            width: 40%;
+            width: 35%;
             margin-left: -3%;
         }
         img{
@@ -391,8 +394,8 @@ a.scroll{
         flex-grow: 1;
         text-align: right;
         margin: 0 4% 16% 0;
-        @include range-width-in(0,767px){
-            width: 60%;
+        @include range-width-in(0,1080px){
+            width: 65%;
             margin: 0 0 9% 0;
         }
         .topbannertitle{
